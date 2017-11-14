@@ -1,0 +1,53 @@
+.appheader{
+    width: 750px;
+    padding: 88px 0 28px;
+    background: #30d1d3;
+    .J_back{
+        position: absolute;
+        left: 0;
+        top: 20px;
+    }
+    .box{
+
+        background:white;
+    }
+    .arrow-box{
+        width:40px;
+        height:40px;
+        position:relative;
+    }
+    .left{
+        width:60px;
+        height:60px;
+        position:absolute;
+        left:0;
+        top:0;
+        z-index: 2;/*兼容ie8-*/
+    }
+    .left-arrow1,.left-arrow2{
+        width:0;
+        height:0;
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        z-index:5;/*兼容ie8-*/
+        border-top:20px transparent dashed;
+        border-left:20px transparent dashed;
+        border-bottom:20px transparent dashed;
+        border-right:20px #30D1D3 solid;
+        overflow:hidden;
+    }
+    .left-arrow1{
+        border-right:20px #fff solid;
+    }
+    .left-arrow2{
+        left:5px;/*重要*/
+        border-right:20px #30D1D3 solid;
+    }
+    .tips{
+        text-align: left;
+        color: #fff;
+        padding-left: 20px;
+    }
+}

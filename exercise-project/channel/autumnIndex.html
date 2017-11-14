@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试小例子</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0" />
+    <script>
+        !function(e){function t(){var t=n.clientWidth,r="}";!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)&&t>1024&&(t=640,r=";max-width:"+t+"px;margin-right:auto!important;margin-left:auto!important;}"),e.rem=t/10,/ZTE U930_TD/.test(navigator.userAgent)&&(e.rem=1.13*e.rem),/Android\s+4\.4\.4;\s+M351\s/.test(navigator.userAgent)&&(e.rem=e.rem/1.05),i.innerHTML="html{font-size:"+e.rem+"px!important;}body{font-size:"+12*(t/320)+"px"+r}var n=document.documentElement,i=document.createElement("style");n.firstElementChild.appendChild(i),e.addEventListener("resize",function(){t()},!1),e.addEventListener("pageshow",function(e){e.persisted&&t()},!1),t()}(window);
+    </script>
+    <link rel="stylesheet" href="static/css/mooncake/midAutumn.min.css">
+    <script src="static/js/vendor/require.js"></script>
+    <script src="static/js/page/mooncake/midAutumn.js"></script>
+</head>
+<body>
+    <div class="page moonckIndexPage">
+        <div class="bgm-btn"><audio id="myaudio" loop="loop" src="static/music/danyuanrenchangjiu.mp3"></audio></div>
+        <div class="background">
+            <img src="static/images/mooncake/autumnindex_01.jpg"/>
+            <img src="static/images/mooncake/autumnindex_02.jpg"/>
+            <img src="static/images/mooncake/autumnindex_03.jpg"/>
+            <img src="static/images/mooncake/autumnindex_04.jpg"/>
+        </div>
+        <div class="mooncake">
+            <a href="fetchRedPacket.html?type=1"><img src="static/images/mooncake/tuanyuan.png" class="s1"/></a>
+            <a href="fetchRedPacket.html?type=2"><img src="static/images/mooncake/meiman.png" class="s2"/></a>
+            <a href="fetchRedPacket.html?type=3"><img src="static/images/mooncake/aiguo.png" class="s3"/></a>
+        </div>
+    </div>
+    <script>
+        pushHistory(); 
+        window.addEventListener("popstate", function(e) {
+            if (sessionStorage.getItem('pageFlag')==='2'){
+                sessionStorage.setItem('pageFlag',1);
+                location.reload();
+            }
+        }, false); 
+        function pushHistory() { 
+            var state = { 
+                title: "title", 
+                url: "#"
+            }; 
+            window.history.pushState(state, "title", "#"); 
+        }
+    </script>
+</body>
+</html>

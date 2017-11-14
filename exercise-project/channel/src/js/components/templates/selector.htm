@@ -1,0 +1,15 @@
+<div class="_selectorBoxNode">
+    <div class="selectorBox">
+        <div class="selectorHeader"><span class="finish">完成</span></div>
+        <div class="selectorBody">
+            <div class="currentCell"></div>
+            <div class="selectorContent">
+                {{if optionList&&optionList.length>0}}
+                    {{each optionList as value index}}
+                        <li data-value={{value.id}}>{{value.name}}</li>
+                    {{/each}}
+                {{/if}}
+            </div>
+        </div>
+    </div><div class="selectorMask hidden"></div>
+</div>

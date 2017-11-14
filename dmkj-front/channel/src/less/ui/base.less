@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  background: #efefef;
+  font-family: '微软雅黑', YaHei, Hei, Tahoma, Helvetica, arial, sans-serif, '黑体';
+  margin: 0;
+  padding: 0;
+  color: #333;
+  user-select:none;
+}
+textarea,
+input,
+selected,
+div,
+span,
+a,
+td {
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  z-index: 88;
+  top: 0;
+  left: 0;
+  width: 10rem;
+}
+header .headbox {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  box-shadow: 0 0.5px 12px #666;
+  background: #c02c2a;
+  color: #fff;
+  font-size: 0.45333333rem;
+  text-align: center;
+  position: relative;
+}
+.goback {
+  background: url(../images/goback.png) no-repeat rgba(255,255,255,0.42) center center;
+  background-size: 0.19rem 0.37rem;
+  display: inline-block;
+  position: fixed;
+  top: 0.65rem;
+  left: 0.21333333333333335rem;
+  width: 0.68rem;
+  height: 0.68rem;
+  z-index: 999;
+  border-radius:50%;
+}
+.account p {
+  line-height: 0.53333333rem;
+}
+input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+}
+* textarea,
+input {
+  -webkit-user-select: initial!important;
+}
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+.clearFloat {
+  clear: both;
+}
+.alignCenter {
+  text-align: center;
+}
+.alignLeft {
+  text-align: left;
+}
+.alignRight {
+  text-align: right;
+}
+.hidden {
+  display: none!important;
+  visibility: hidden!important;
+}
+.noEvent {
+  pointer-events: none;
+}
+.page {
+  width: 750px;
+  min-height: 100%;
+  position: absolute;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.pages {
+  width: 750px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+.page .pro {
+  width: 9.46666667rem;
+}
+.page ._header {
+  position: fixed;
+  top: 0;
+  width: 10rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2rem;
+  z-index: 3000;
+  background-color: #ff8600;
+}
+.page ._header .icon-back {
+  font-size: .4rem;
+  position: absolute;
+  left: 0.2rem;
+}
+.page ._header .icon-close {
+  position: absolute;
+  right: .33333333rem;
+  top: 0;
+  font-size: 0.4rem;
+}
+.page ._header h6 {
+  font-size: .48rem;
+  font-weight: 100;
+  margin: 0 1.06666667rem;
+}
+.page ._content {
+  margin-top: 1.2rem;
+}
+
+.J_overlayer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    &.md-show{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.md-show ~ .md-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+@import './dialog.less';

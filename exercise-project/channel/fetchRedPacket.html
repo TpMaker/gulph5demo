@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试小例子</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0" />
+    <script>
+        !function(e){function t(){var t=n.clientWidth,r="}";!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)&&t>1024&&(t=640,r=";max-width:"+t+"px;margin-right:auto!important;margin-left:auto!important;}"),e.rem=t/10,/ZTE U930_TD/.test(navigator.userAgent)&&(e.rem=1.13*e.rem),/Android\s+4\.4\.4;\s+M351\s/.test(navigator.userAgent)&&(e.rem=e.rem/1.05),i.innerHTML="html{font-size:"+e.rem+"px!important;}body{font-size:"+12*(t/320)+"px"+r}var n=document.documentElement,i=document.createElement("style");n.firstElementChild.appendChild(i),e.addEventListener("resize",function(){t()},!1),e.addEventListener("pageshow",function(e){e.persisted&&t()},!1),t()}(window);
+    </script>
+    <link rel="stylesheet" href="static/css/mooncake/midAutumn.min.css">
+    <script src="static/js/vendor/require.js"></script>
+    <script src="static/js/page/mooncake/midAutumn.js"></script>
+</head>
+<body>
+    <div class="page mooncakePage">
+        <div class="bgm-btn"><audio id="myaudio" loop="loop" src="static/music/danyuanrenchangjiu.mp3"></audio></div>
+        <div class="background">
+            <img src="static/images/mooncake/sharecake_01.png"/>
+            <img src="static/images/mooncake/sharecake_02.png"/>
+            <img src="static/images/mooncake/sharecake_03.png"/>
+            <img src="static/images/mooncake/sharecake_04.png"/>
+        </div>
+        <div class="mooncakeBox">
+            <img src="static/images/mooncake/aiguo2.png" class="bigcake"/>
+            <img src="static/images/mooncake/title1.png" class="subcontent"/>
+            <img src="static/images/mooncake/zhaohuan.png" class="moonbtn zhaohuan"/>
+            <div class="fetchPacket disabled" onclick="window.location='https://wap.lewaimai.com/index.php?r=lewaimaicoupon/index&id=2112'"></div>
+            <div class="hintmsg">召唤小伙伴后可点亮领取红包按钮</div>
+        </div>
+    </div>
+    <div class="directionMask hidden"></div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@import './iconfont.less';
+.animator {
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .2s ease-in 0s
+}
+
+.animator.show {
+    opacity: 1;
+    z-index: 2000
+}
+
+.animator.show .__modelDialog {
+    opacity: 1
+}
+
+.__modelMask {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background: rgba(0,0,0,.2)
+}
+
+.__modelMask .__modelDialog {
+    opacity: 0;
+    width: 500px;
+    position: relative;
+    background: #fff;
+    border-radius: .21333333rem;
+    overflow: hidden;
+    font-family: '微软雅黑', YaHei, Hei, Tahoma, Helvetica, arial, sans-serif, '黑体';
+}
+
+.__modelMask .btn_close {
+    position: absolute;
+    right: .30666667rem;
+    top: .30666667rem;
+    color: #333;
+    z-index: 30
+}
+
+.__modelMask .rejTitle {
+    position: relative;
+    line-height: 1.2rem;
+    text-align: left;
+    padding-left: .53333333rem
+}
+
+.__modelMask .ok {
+    outline: 0;
+    border: 0;
+    height: .96rem;
+    width: 2.4rem;
+    line-height: .96rem;
+    font-size: .4rem;
+    border-radius: .13333333rem;
+    color: #fff;
+    background-color: #4CD645;
+    margin: .22666667rem auto .26666667rem;
+    &.disabled{
+        opacity: 0.3;
+        pointer-events: none;
+    }
+}
+
+.__modelMask .cancel {
+    background-color: #fff;
+    border-radius: .10666667rem;
+    color: #4CD645;
+    text-align: center;
+    height: .86666667rem;
+    width: 2.4rem;
+    line-height: .86666667rem;
+    font-size: .4rem;
+    border: 1px solid #4CD645;
+    margin: .22666667rem auto .26666667rem .26666667rem
+}
+
+.__modelMask.__messageBox .remindMessage {
+    line-height: 48px;
+    margin-top: .53333333rem;
+    padding: .2rem .26666667rem
+}
+
+.__modelMask.__messageBox .__modelDialog {
+    height: auto;
+    width: 500px;
+    text-align: center;
+    padding: .26666667rem
+}
+
+.__modelMask.__messageBox .buttonBox {
+    overflow: hidden
+}
+
+.__tipModelBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  max-width: 7.2rem;
+  text-align: center;
+  padding: .2rem .24rem;
+  line-height: .55rem;
+  color: #fff;
+  z-index: 20000;
+  font-size: 0.37rem;
+  border-radius: 0.1rem;
+  transform:  translate(-50%, -50%) scale3d(1.2, 1.2, 1.2);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes bounceOut {
+  0% {
+    opacity: 0;
+    transform:  translate(-50%, -50%) scale3d(1.2, 1.2, 1.2);
+  }
+
+  10%, 85% {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale3d(1, 1, 1);
+  }
+
+  to {
+    opacity: 0.2;
+    transform: translate(-50%,-50%) scale3d(1, 1, 1);
+  }
+}
+
+.bounceOut {
+  animation: 4s bounceOut ease-in-out 0s;
+}
+
+.__modelMask .mheader {
+    color: #fff;
+    line-height: 1.2rem;
+    text-align: center;
+    background-color: #4CD645;
+}
+
+.__modelMask .mcontent {
+    position: absolute;
+    top: 1.2rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.__modelDialog span{
+    font-family: 'iconfont';
+    margin-right: 12px;
+    font-size: 40px;
+    &.error{
+        color: red;
+    }
+    &.success{
+        color: green;
+    }
+}

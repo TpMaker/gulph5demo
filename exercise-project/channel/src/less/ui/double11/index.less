@@ -1,0 +1,387 @@
+@import '../base.less';
+@import '../mixins.less';
+.double11Page{
+    background: url(../../images/double11/dogbg.png?t=2) repeat-y center top;
+    background-size: contain;
+    .chestBox{
+        position: relative;
+        width: 750px;
+        height: 742px;
+        overflow: hidden;
+        .chestBgBox{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background: url(../../images/double11/chest.png) no-repeat center center;
+            background-size: contain;
+        }
+        >.machineBg{
+            position: absolute;
+            width: 710px;
+            height: 684px;
+            margin: 40px 20px 0px 20px;;
+            z-index: 1;
+            background: url('../../images/double11/machine.png') #94c47f no-repeat;
+            background-size: contain;
+        }
+        >.hook{
+            position: absolute;
+            left: 100px;
+            top: -260px;
+            width: 165px;
+            height: 502px;
+            z-index: 2;
+            background: url('../../images/double11/hood.png') no-repeat center top;
+            background-size: contain;
+        }
+        >.hook2{
+            position: absolute;
+            left: 495px;
+            top: -234px;
+            width: 160px;
+            height: 622px;
+            z-index: 2;
+            background: url('../../images/double11/hashiqi.png') no-repeat center top;
+            background-size: contain;
+        }
+        .fetch1{
+            animation: samo 8s ease 0s;
+        }
+        .fetch2{
+            animation: doufa 8s ease 0s;
+        }
+        .fetch3{
+            animation: keji 8s ease 0s;
+        }
+        .fetch4{
+            animation: jinmao 8s ease 0s;
+        }
+        .fetch5{
+            animation: hashiqi 8s ease 0s;
+        }
+    }
+
+    .fetchContainer{
+        position: relative;
+        padding-top: 27px;
+        z-index: 20;
+        box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.16) inset;
+        .brandList{
+            width: 683px;
+            height: 90px;
+            color: #c34d1c;
+            padding: 0px 20px;
+            margin: 0px auto 0px auto;
+            background: url('../../images/double11/bangdanbg.png') no-repeat center top;
+            background-size: contain;
+            >.message{
+                font-size: 32px;
+                line-height: 64px;
+            }
+            >.scanBrand{
+                font-size: 25px;
+                font-weight: bold;
+                line-height: 66px;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        .mydog{
+            position: absolute;
+            top: 194px;
+            left: 10px;
+            width: 215px;
+            height: 72px;
+        }
+        .myprize{
+            position: absolute;
+            top: 194px;
+            right: 10px;
+            width: 217px;
+            height: 74px;
+        }
+        .fetchdog{
+            position: absolute;
+            top: 112px;
+            left: 245px;
+            width: 261px;
+            height: 261px;
+        }
+        .rules{
+            position: absolute;
+            top: 367px;
+            left: 10px;
+            width: 175px;
+            height: 61px;
+        }
+        .introduce{
+            position: absolute;
+            top: 367px;
+            right: 10px;
+            width: 175px;
+            height: 61px;
+        }
+    }
+}
+
+@keyframes samo {
+    0% {
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    30% {
+        left: 500px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    40% {
+        left: 500px;
+        top: 100px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    42%{
+        left: 510px;
+        top: 94px;
+        width: 143px;
+        height: 612px;
+        background-image: url('../../images/double11/samo.png');
+    }
+    80%{
+        left: 510px;
+        top: -235px;
+        width: 143px;
+        height: 612px;
+        background-image: url('../../images/double11/samo.png');
+    }
+    99.9%{
+        left: 110px;
+        top: -235px;
+        width: 143px;
+        height: 612px;
+        background-image: url('../../images/double11/samo.png');
+    }
+    100%{
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+}
+
+@keyframes jinmao {
+    0% {
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    30% {
+        left: 500px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    40% {
+        left: 500px;
+        top: 100px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    42%{
+        left: 504px;
+        top: 94px;
+        width: 144px;
+        height: 622px;
+        background-image: url('../../images/double11/jinmao.png');
+    }
+    80%{
+        left: 504px;
+        top: -228px;
+        width: 144px;
+        height: 622px;
+        background-image: url('../../images/double11/jinmao.png');
+    }
+    99.9%{
+        left: 110px;
+        top: -228px;
+        width: 144px;
+        height: 622px;
+        background-image: url('../../images/double11/jinmao.png');
+    }
+    100%{
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+}
+
+@keyframes doufa {
+    0% {
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    30% {
+        left: 500px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    40% {
+        left: 500px;
+        top: 100px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    42%{
+        left: 507px;
+        top: 94px;
+        width: 137px;
+        height: 581px;
+        background-image: url('../../images/double11/doufa.png');
+    }
+    80%{
+        left: 507px;
+        top: -236px;
+        width: 137px;
+        height: 581px;
+        background-image: url('../../images/double11/doufa.png');
+    }
+    99.9%{
+        left: 114px;
+        top: -236px;
+        width: 137px;
+        height: 581px;
+        background-image: url('../../images/double11/doufa.png');
+    }
+    100%{
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+}
+
+@keyframes keji {
+    0% {
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    30% {
+        left: 500px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    40% {
+        left: 500px;
+        top: 100px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    42%{
+        left: 507px;
+        top: 94px;
+        width: 149px;
+        height: 614px;
+        background-image: url('../../images/double11/keji.png');
+    }
+    80%{
+        left: 507px;
+        top: -232px;
+        width: 149px;
+        height: 614px;
+        background-image: url('../../images/double11/keji.png');
+    }
+    99.9%{
+        left: 112px;
+        top: -232px;
+        width: 149px;
+        height: 614px;
+        background-image: url('../../images/double11/keji.png');
+    }
+    100%{
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+}
+
+@keyframes hashiqi {
+    0% {
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    30% {
+        left: 500px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    40% {
+        left: 500px;
+        top: 100px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+    42%{
+        left: 495px;
+        top: 94px;
+        width: 160px;
+        height: 622px;
+        background-image: url('../../images/double11/hashiqi.png');
+    }
+    80%{
+        left: 495px;
+        top: -234px;
+        width: 160px;
+        height: 622px;
+        background-image: url('../../images/double11/hashiqi.png');
+    }
+    99.9%{
+        left: 94px;
+        top: -234px;
+        width: 160px;
+        height: 622px;
+        background-image: url('../../images/double11/hashiqi.png');
+    }
+    100%{
+        left: 100px;
+        top: -260px;
+        width: 165px;
+        height: 502px;
+        background-image: url('../../images/double11/hood.png');
+    }
+}

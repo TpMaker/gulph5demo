@@ -1,0 +1,103 @@
+._userSelector {
+    outline: none;
+    border: 1px solid #8e8e8e;
+    height: 60px;
+	line-height: 60px;
+    font-size: 30px;
+    padding: 0px 15px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+	display: inline-block;
+    background: url(../images/dropdown.png) no-repeat scroll content-box right center transparent;
+    background-size: 15px;
+}
+
+.selectorBox{
+    position: fixed;
+    bottom: -100%;
+    width: 10rem;
+    text-align: center;
+    background-color:#fff;
+	transition: bottom 0.3s ease 0s;
+	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+    z-index:20000;
+	&.show{
+		bottom: 0;
+	}
+    .currentCell{
+     	position: absolute;
+		top: 2.2rem;
+		height: 70px;
+		line-height: 70px;
+		width: 10rem;
+		border-top: 1px solid #c2bfbf;
+		border-bottom: 1px solid #c2bfbf;
+    }
+
+	.selectorHeader{
+		z-index: 10;
+		color: blue;
+		height: 80px;
+		line-height: 80px;
+		font-size: 26px;
+		font-weight: bold;
+		text-align: right;
+		position: relative;
+		padding-right: 40px;
+		background-color: #f7f6f6;
+		border-top: 1px solid #e6e0e0;
+		border-bottom: 1px solid #e6e0e0;
+	}
+
+	.selectorBody{
+		position:relative;
+		height: 400px;
+		overflow: hidden;
+		list-style-type:none;
+		background-color: #e7e7e7;
+		.selectorContent{
+			position:relative;
+			margin-top: 166px;
+			top: 0px;
+			.checkedText{
+				font-size:36px;
+				color:#333;
+			}
+			.c1{
+					opacity:0.6;
+					font-size:32px;
+					font-style: italic;
+			}
+			.c2{
+					opacity:0.4;
+					font-size:28px;
+					font-style: italic;
+			}
+			.c3{
+					opacity:0.2;
+					font-size:26px;
+					font-style: italic;
+			}
+
+			.c4,
+			.c5{
+					opacity:0.1;
+					font-size:22px;
+					font-style: italic;
+			}
+		}
+		li{
+			height:70px;
+			line-height:70px; 
+		}
+	}
+}
+
+.selectorMask {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: transparent;
+}

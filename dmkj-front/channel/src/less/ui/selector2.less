@@ -1,0 +1,53 @@
+._selectorComponent{
+    ._loadingMask{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .selectorDialog {
+        position: fixed;
+        width: 10rem;
+        bottom: -100%;
+        z-index: 10000;
+        border-top: 3px solid #ededed;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+        -webkit-transition: .6s ease bottom,z-index .0s;
+        &.show{
+            bottom: 0px;
+        }
+    }
+
+    .selectorList{
+        position: relative;
+    }
+
+    .selectorList>li {
+        height: 90px;
+        line-height: 90px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ededed;
+        &.selected{
+            color: #6DC4FB;
+            background-color: #efefef;
+        }
+    }
+
+    .cancelSelector{
+        margin-top: 8px;
+        font-size: 34px;
+        font-weight: bold;
+        color: #6DC4FB;
+        height: 90px;
+        line-height: 90px;
+        background-color: #fff;
+    }
+
+    .selectorListBox {
+        max-height: 450px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+}
