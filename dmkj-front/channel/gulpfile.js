@@ -17,7 +17,7 @@ var px2rem = require('gulp-px2rem'),
 //配置文件
 var config = {
     //是否压缩
-    isZiped: false,
+    isZiped: true,
     // 静态资源引入
     assets: {
         less: './src/less/ui/**/*.less',

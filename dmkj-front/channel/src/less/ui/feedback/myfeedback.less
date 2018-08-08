@@ -1,0 +1,94 @@
+@import "../mixins.less";
+@import "../base.less";
+@import "./header.less";
+@import "./oneRow.less";
+@import "../iconfont.less";
+@import "../loading.less";
+html, body{
+  height: 100%;
+  background-color: #f3f5f9;
+}
+.header a{
+  text-decoration:none;
+  color:#fff;
+}
+.noContent{
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transform: translateX(-50%);
+    .noIcon{
+        height: 140px;
+        width: 215px;
+        margin: 0 auto;
+        background: url('../../images/grow/empty.png') no-repeat;
+        background-size: contain;
+    }
+
+    .notmessage{
+        color: #999;
+        font-size: 26px;
+        margin-top: 30px;
+    }
+}
+.cnt {
+  box-sizing: border-box;
+  .px2rem(padding-top, 143);
+  .px2rem(padding-left, 20);
+  .px2rem(padding-right, 20);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+
+  .list-row{
+    cursor:pointer;
+    .px2rem(min-height, 160);
+    .px2rem(padding-top, 20);
+    .px2rem(padding-bottom, 30);
+    border-bottom: 1px solid #eee;
+
+    .title{
+      align-items: center;
+      .px2rem(min-height, 66);
+      line-height:66px;
+      .px2rem(font-size, 28);
+      font-weight: normal;
+      text-align: left;
+      width:100%;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      .status{
+        font-size:24px;
+        padding: 5px 6px;
+        border-radius: 8px;
+        background: #37c2ac;
+        color: #fff;
+      }
+    }
+    
+    p{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 1.2rem;
+      color: #999999;
+
+      .time{
+        display: flex;
+        align-items: center;
+        .time-icon{
+          display: inline-block;
+          .px2rem(width, 28);
+          .px2rem(height, 28);
+          margin-right: 10px;
+          background: url("../../images/little_time.png") no-repeat 0 0;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}

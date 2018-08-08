@@ -1,0 +1,52 @@
+@import "../mixins.less";
+@import "../base.less";
+
+.one-row{
+  .px2rem(min-height, 49);
+  .px2rem(padding-top, 20);
+  .px2rem(padding-bottom, 20);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+
+  .row-name{
+    .px2rem(height, 49);
+    .px2rem(width, 190);
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: -2px;
+
+    span{
+      display: flex;
+      justify-content: space-between;
+      font-weight: normal;
+      .px2rem(font-size, 28);
+      color: #696969;
+      text-align: justify;
+      text-align-last: justify;
+      flex: 2;
+      .spa{
+        display: inline-block;
+        flex: 2;
+      }
+    }
+  }
+  .row-icon{
+    display: inline-block;
+    .px2rem(width, 44);
+    .px2rem(height, 44);
+    .px2rem(margin-top, 4);
+    .px2rem(margin-right, 3);
+    background: url("../../images/four.png") no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+
+  .row-cnt{
+    .px2rem(padding-left, 10);
+    .px2rem(font-size, 28);
+    .px2rem(line-height, 44);
+    text-align: left;
+    flex: 1;
+  }
+}

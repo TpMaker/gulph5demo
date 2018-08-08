@@ -1,0 +1,118 @@
+@import "../mixins.less";
+@import "../base.less";
+@import "../iconfont.less";
+.header a{
+  text-decoration:none;
+  color:#fff;
+}
+.header {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: fixed;
+  padding-top: 47px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  .px2rem(height, 140);
+  .px2rem(padding-left, 20);
+  .px2rem(padding-right, 20);
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  background-color: #37c2ac;
+  h2 {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    .px2rem(font-size, 34);
+    color: #fff;
+    font-weight: normal;
+    font-size:29px;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    -webkit-box-flex: .5;
+    -ms-flex: .5;
+    flex: .5;
+    .px2rem(font-size, 30);
+    color: #fff;
+    background: none;
+    a{
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      .header-icon {
+        display: inline-block;
+        .px2rem(width, 44);
+        .px2rem(height, 44);
+
+        &.back{
+          margin-top:18px;
+          cursor: pointer;
+          .px2rem(width, 16);
+          .px2rem(height, 30);
+          line-height:60px;
+          background: url("../../images/back.png") no-repeat 0 0;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &.left-btn{
+      a{
+        width:60px;
+      }
+    }
+  }
+
+  .left-btn {
+    text-align: left;
+  }
+
+  .right-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    .icon-one{
+      .px2rem(width, 57);
+      .px2rem(padding-right, 15);
+    }
+
+    .icon-two{
+      .px2rem(width, 57);
+      .px2rem(padding-left, 15);
+    }
+  }
+}
+.page {
+    width: 10rem;
+    margin: 143px auto 0;
+    text-align: center;
+    background: #fff;
+    img{
+    	width:100%;
+    	display: block;
+    }
+    .msgBox{
+		position:fixed;
+		top:0;
+		left: 50%;
+        margin-left: -375px;
+		width: 10rem;
+		height: 80px;
+		line-height: 80px;
+		font-size: 24px;
+		color: #fff;
+		background: rgba(0,0,0,.5);
+    }
+}

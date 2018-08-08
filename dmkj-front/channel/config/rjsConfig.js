@@ -45,6 +45,7 @@ module.exports = function(config) {
         paths: {
             zepto: 'vendor/zepto',
             swiper: 'vendor/swiper.min',
+            previeimg:'vendor/previewImage.min',
             iscroll: 'vendor/iscroll',
             qrcode : 'vendor/qrcode.logo',
             text: 'vendor/require_text',
